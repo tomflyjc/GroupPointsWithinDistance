@@ -363,7 +363,7 @@ class Ui_Dialog(object):
 
         # modification de la table de point initiale pour ajout d un numero d agregat
         # making of the modified point layer with aggregates code
-        AGGREGATS= QgsVectorLayer("Point?crs=epsg:2154",  str(layerP.name())+"_with_aggregates", "memory")
+        AGGREGATS= QgsVectorLayer("Point?crs=epsg:2154",  str(layerP.name())+"_aggregated_with_D"+str(D), "memory")
         QgsProject.instance().addMapLayer(AGGREGATS)
         prAGGREGATS =AGGREGATS.dataProvider()
         fieldsP=layerP.fields()
