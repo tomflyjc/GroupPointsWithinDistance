@@ -86,7 +86,7 @@ class Ui_Dialog(object):
         "\n"+"                                                                                                                                                                                                                    \n"+
         "The user should appreciate and cheack which distance to use, and - may be - keep the distance chosen as small as possible in order to avoid '"'chains effect'"' and producing too widespread groups .\n"+
         "                                                                                                                                          \n"+
-        "The plugin produces a layer of point called '"'input_layer_name_with_aggregates'"' with 3 mores attributes:                                                          \n"+
+        "The plugin produces a layer of point called '"'input_layer_name_aggregated_with_Distance'"' with 3 mores attributes:                                                          \n"+
         "                                                                                                                                                                                                                    \n"+
         " - Point_id: the point id,                                                                                                                                                              \n"+               
 
