@@ -325,7 +325,7 @@ class Ui_Dialog(object):
         STATIONS.commitChanges()
         iface.mapCanvas().refresh()       
 
-        SEGMENTS= QgsVectorLayer("MultiLineString?crs=epsg:2154", "Lines_from_"+ str(layerP.name())+"_Aggregates", "memory")
+        SEGMENTS= QgsVectorLayer("MultiLineString?crs=epsg:2154", "Lines_from_"+ str(layerP.name())+"_Aggregates_with_D"+str(D), "memory")
         QgsProject.instance().addMapLayer(SEGMENTS)
         prSEGMENTS =SEGMENTS.dataProvider()
         listFields = []
