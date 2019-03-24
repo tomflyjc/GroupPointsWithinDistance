@@ -6,7 +6,10 @@ name=GroupPointsWithinDistance
 qgisMinimumVersion=3.0.0
 category=Vector
 description= This plugin for QGIS 3.x regroup all points linked one to another because they are within a given distance from one another, it gives them a commun aggregate id attribute.
-about= This plugin for QGIS 3.x regroup all pointslinked one to another because they are within a given distance from one another, it gives them a commun aggregate id attribute. It also produces a line layer and a polygon layer to overlap and visualize the aggregates.
+This plugins pick a point, the first of the aggregate, and seek, in the distance of research chosen by the user, another one. If this second point is found, is added to the aggregate and the loop starts again untill no more points are added.
+The plugin loop untill all points are treated.
+This plugin also produces a line layer and a polygon layer to overlap the points and visualize the aggregates.
+about= This plugin was meant to group very nearby faunistic fields observations from different date and observers in order to produce "sites"  of presence.
 
 version=0.0.1
 
