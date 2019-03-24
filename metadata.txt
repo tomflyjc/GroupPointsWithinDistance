@@ -22,7 +22,7 @@ tags= Tools, Points, Aggregate, Group , Python,  QGIS
 homepage= https://github.com/tomflyjc/GroupPointsWithinDistance
 tracker=https://github.com/tomflyjc/GroupPointsWithinDistance/issues
 repository=https://github.com/tomflyjc/GroupPointsWithinDistance
-icon=data/GroupPointsWithinDistance1.png 
+icon=icons/GroupPointsWithinDistance1.png 
 experimental=True
 deprecated=False
 
