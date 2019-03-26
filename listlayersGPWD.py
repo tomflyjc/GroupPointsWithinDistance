@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # (c) JC BAUDIN 2019 03 21
+# modified 2019 03 26 EPSG 2154 forced proj bug fixed
 # import de QGIS
 from PyQt5 import QtCore
 from PyQt5 import QtGui
@@ -294,7 +295,7 @@ class Ui_Dialog(object):
         self.iface.mapCanvas().refresh()
         
         
-        STATIONS= QgsVectorLayer("MultiPolygon?crs=epsg:2154",  "Polygons_under_AGGREGATES_D"+str(D)+"_OF_"+ str(layerP.name()), "memory")
+        STATIONS= QgsVectorLayer("MultiPolygon",  "Polygons_under_AGGREGATES_D"+str(D)+"_OF_"+ str(layerP.name()), "memory")
         QgsProject.instance().addMapLayer(STATIONS)
         prSTATIONS =STATIONS.dataProvider()
         listFieldsS = []
@@ -325,7 +326,7 @@ class Ui_Dialog(object):
         STATIONS.commitChanges()
         iface.mapCanvas().refresh()       
 
-        SEGMENTS= QgsVectorLayer("MultiLineString?crs=epsg:2154", "Lines_from_"+ str(layerP.name())+"_Aggregates_with_D"+str(D), "memory")
+        SEGMENTS= QgsVectorLayer("MultiLineString", "Lines_from_"+ str(layerP.name())+"_Aggregates_with_D"+str(D), "memory")
         QgsProject.instance().addMapLayer(SEGMENTS)
         prSEGMENTS =SEGMENTS.dataProvider()
         listFields = []
@@ -363,7 +364,7 @@ class Ui_Dialog(object):
 
         # modification de la table de point initiale pour ajout d un numero d agregat
         # making of the modified point layer with aggregates code
-        AGGREGATS= QgsVectorLayer("Point?crs=epsg:2154",  str(layerP.name())+"_aggregated_with_D"+str(D), "memory")
+        AGGREGATS= QgsVectorLayer("Point",  str(layerP.name())+"_aggregated_with_D"+str(D), "memory")
         QgsProject.instance().addMapLayer(AGGREGATS)
         prAGGREGATS =AGGREGATS.dataProvider()
         fieldsP=layerP.fields()
