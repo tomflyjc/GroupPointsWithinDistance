@@ -11,12 +11,13 @@ The plugin loop untill all points are treated.
 This plugin also produces a line layer and a polygon layer to overlap the points and visualize the aggregates.
 about= This plugin was meant to group very nearby faunistic fields observations from different date and observers in order to produce "sites"  of presence.
 
-version=0.0.1
+version=0.0.2
 
 
 # Optional items:
 
 changelog: 0.0.1   first version for QGIS 3.x
+0.0.2: the bug with the EPSG 2154 forced projection is fixed !
 
 tags= Tools, Points, Aggregate, Group , Python,  QGIS
 homepage= https://github.com/tomflyjc/GroupPointsWithinDistance
