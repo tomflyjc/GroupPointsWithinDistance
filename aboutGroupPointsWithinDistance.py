@@ -72,12 +72,12 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QApplication.translate("Dialog", "GroupPointsWithinDistance", None))
-        self.label_2.setText(QApplication.translate("Dialog", "GroupPointsWithinDistance 0.1", None))
+        self.label_2.setText(QApplication.translate("Dialog", "GroupPointsWithinDistance 0.2", None))
         self.textEdit.setHtml(QApplication.translate("Dialog", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
         "p, li { white-space: pre-wrap; }\n"
         "</style></head><body style=\" font-family:\'Sans Serif\'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
         "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:8pt;\"><span style=\" font-weight:600;\">"
-        " GroupPointsWithinDistance 0.1 :</span>" "  A little QGIS plugin to find and group/aggregate points of a points' layer if they are at a given distance of one another.</b>\n"+
+        " GroupPointsWithinDistance 0.2 :</span>" "  A little QGIS plugin to find and group/aggregate points of a points' layer if they are at a given distance of one another.</b>\n"+
         "                                                                                                                                                                                           \n"+ 
         " <br><b>WARNING:</b><br><b> Work with projected datas only, in other words do not use geographical (long-lat type) reference systems !</b>\n " +
         "                                                                                                                                             \n"+
@@ -113,7 +113,7 @@ class Ui_Dialog(object):
         "<p style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">"
         "                   "
         "<br><b>jeanchristophebaudin@ymail.com</b><br>"
-        "<br><br><i>code 0.1 (21 march 2019).</i></p></body></html>", None))
+        "<br><br><i>code 0.2 (26 march 2019).</i></p></body></html>", None))
         self.pushButton.setText(QApplication.translate("Dialog", "OK", None))
 
 
