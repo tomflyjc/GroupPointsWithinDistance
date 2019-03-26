@@ -82,7 +82,7 @@ class Ui_Dialog(object):
         " <br><b>WARNING:</b><br><b> Work with projected datas only, in other words do not use geographical (long-lat type) reference systems !</b>\n " +
         "                                                                                                                                             \n"+
         "             \n"+
-        "This plugin is meant to deal with any points datas (for instance faunistic or floristic observations), nearby from one another, that the user wants to be regrouped/aggregated as a station.\n"+
+        "This plugin is meant to deal with points datas (not multipoints, convert first to points) (for instance faunistic or floristic observations), nearby from one another, that the user wants to be regrouped/aggregated as a station.\n"+
         "\n"+"                                                                                                                                                                                                                    \n"+
         "The user should appreciate and cheack which distance to use, and - may be - keep the distance chosen as small as possible in order to avoid '"'chains effect'"' and producing too widespread groups .\n"+
         "                                                                                                                                          \n"+
