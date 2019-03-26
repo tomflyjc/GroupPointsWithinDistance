@@ -16,8 +16,9 @@ version=0.0.2
 
 # Optional items:
 
-changelog: 0.0.1   first version for QGIS 3.x
-0.0.2: the bug with the EPSG 2154 forced projection is fixed !
+changelog: 0.0.2  the bug with the EPSG 2154 forced projection is fixed !
+0.0.1 first version for QGIS 3.x
+
 
 tags= Tools, Points, Aggregate, Group , Python,  QGIS
 homepage= https://github.com/tomflyjc/GroupPointsWithinDistance
